@@ -14,6 +14,6 @@ RUN apt-get -y install \
 
 
 # Install kima
-RUN git clone https://github.com/j-faria/kima
+RUN git clone --recursive https://github.com/j-faria/kima
 RUN cd kima && \
 	make
