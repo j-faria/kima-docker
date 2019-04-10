@@ -11,3 +11,6 @@ RUN conda install --yes numpy scipy matplotlib && conda clean --all
 RUN git clone --recursive https://github.com/j-faria/kima
 RUN cd kima && \
 	make -j 4
+
+# so ugly! :/
+RUN echo "echo not actually clang" > /bin/clang && chmod +x /bin/clang
